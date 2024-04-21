@@ -1,0 +1,1391 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "fpadd_system")
+(DATE "Mon Mar 21 21:58:07 2022")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2020.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE a0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3521.2:3725.4:3725.4) (3521.2:3725.4:3725.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE a1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3398.1:3601.1:3601.1) (3398.1:3601.1:3601.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE an0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3433.8:3637.1:3637.1) (3433.8:3637.1:3637.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE an1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3369.1:3571.7:3571.7) (3369.1:3571.7:3571.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE b0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3455.4:3658.9:3658.9) (3455.4:3658.9:3658.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE b1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3411.4:3614.5:3614.5) (3411.4:3614.5:3614.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE c0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3350.2:3552.6:3552.6) (3350.2:3552.6:3552.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE c1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3350.0:3552.5:3552.5) (3350.0:3552.5:3552.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:101.0:101.0) (91.0:101.0:101.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1419.7:1490.4:1490.4) (1419.7:1490.4:1490.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE d0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3433.3:3636.6:3636.6) (3433.3:3636.6:3636.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE d1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3373.7:3576.4:3576.4) (3373.7:3576.4:3576.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE e0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3525.6:3729.8:3729.8) (3525.6:3729.8:3729.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE e1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3415.7:3618.8:3618.8) (3415.7:3618.8:3618.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE f0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3451.7:3655.2:3655.2) (3451.7:3655.2:3655.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE f1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3393.9:3596.8:3596.8) (3393.9:3596.8:3596.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE fpadd_mult_inst/e1_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE fpadd_mult_inst/first_stage_result_control_signal_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (689.0:855.0:855.0))
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (RECREM (negedge CLR) (posedge C) (279.0:347.0:347.0) (-232.0:-232.0:-232.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE fpadd_mult_inst/g0_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE g0_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3337.9:3540.2:3540.2) (3337.9:3540.2:3540.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE g1_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3368.4:3571.0:3571.0) (3368.4:3571.0:3571.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3319.2:3521.4:3521.4) (3319.2:3521.4:3521.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3310.6:3512.7:3512.7) (3310.6:3512.7:3512.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3327.9:3530.1:3530.1) (3327.9:3530.1:3530.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3326.6:3528.8:3528.8) (3326.6:3528.8:3528.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3333.6:3535.8:3535.8) (3333.6:3535.8:3535.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3327.9:3530.1:3530.1) (3327.9:3530.1:3530.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3309.3:3511.3:3511.3) (3309.3:3511.3:3511.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE leds_OBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3299.0:3500.9:3500.9) (3299.0:3500.9:3500.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE reset_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1377.8:1448.0:1448.0) (1377.8:1448.0:1448.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE reset_antibounce_inst/counter\[0\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE reset_antibounce_inst/counter\[0\]_i_1__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE reset_antibounce_inst/counter\[0\]_i_1__1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE reset_antibounce_inst/counter\[1\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE reset_antibounce_inst/counter\[2\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I1 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I0 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE reset_antibounce_inst/counter\[3\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE reset_antibounce_inst/counter\[4\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I3 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I2 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+      (IOPATH I1 O (118.0:146.0:146.0) (118.0:146.0:146.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE reset_antibounce_inst/counter\[5\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE reset_antibounce_inst/counter\[6\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE reset_antibounce_inst/counter\[7\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I1 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+      (IOPATH I0 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE reset_antibounce_inst/counter\[8\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE reset_antibounce_inst/counter\[9\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE reset_antibounce_inst/counter\[9\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I3 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+      (IOPATH I2 O (118.0:146.0:146.0) (118.0:146.0:146.0))
+      (IOPATH I1 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE reset_antibounce_inst/counter\[9\]_i_3)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[4\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[5\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[6\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[7\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[8\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/counter_reg\[9\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE reset_antibounce_inst/debounced_reset_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE reset_antibounce_inst/debounced_reset_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/debounced_reset_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/reset_sync_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE reset_antibounce_inst/temp_reset_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE seven_segment_display_inst0/LED_decoder_inst/a)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/anode_signal_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter\[1\]_i_1__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I1 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I0 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter\[2\]_i_1__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I3 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I2 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+      (IOPATH I1 O (118.0:146.0:146.0) (118.0:146.0:146.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_2__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter\[1\]_i_1__1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I1 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I0 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter\[2\]_i_1__1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I3 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I2 O (120.0:148.0:148.0) (120.0:148.0:148.0))
+      (IOPATH I1 O (118.0:146.0:146.0) (118.0:146.0:146.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT6")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I5 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/d1_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE seven_segment_display_inst1/anodes_driving_inst/f1_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (93.0:116.0:116.0) (93.0:116.0:116.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "fpadd_system")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT clk_IBUF_BUFG_inst/O fpadd_mult_inst/first_stage_result_control_signal_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[3\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[4\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[5\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[6\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[7\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[8\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/counter_reg\[9\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/debounced_reset_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/reset_sync_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O reset_antibounce_inst/temp_reset_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst0/anodes_driving_inst/anode_signal_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT fpadd_mult_inst/e1_OBUF_inst_i_1/O e1_OBUF_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q b0_OBUF_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q leds_OBUF\[0\]_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q leds_OBUF\[1\]_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q leds_OBUF\[2\]_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q leds_OBUF\[3\]_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q leds_OBUF\[4\]_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q leds_OBUF\[7\]_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q seven_segment_display_inst0/LED_decoder_inst/a/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q seven_segment_display_inst1/anodes_driving_inst/d1_OBUF_inst_i_1/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q seven_segment_display_inst1/anodes_driving_inst/f1_OBUF_inst_i_1/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q fpadd_mult_inst/e1_OBUF_inst_i_1/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT fpadd_mult_inst/first_stage_result_control_signal_reg/Q fpadd_mult_inst/g0_OBUF_inst_i_1/I0 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT fpadd_mult_inst/g0_OBUF_inst_i_1/O g0_OBUF_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT fpadd_mult_inst/g0_OBUF_inst_i_1/O g1_OBUF_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT reset_IBUF_inst/O reset_antibounce_inst/temp_reset_reg/D (909.7:985.7:985.7) (909.7:985.7:985.7))
+      (INTERCONNECT reset_antibounce_inst/counter\[0\]_i_1/O reset_antibounce_inst/counter_reg\[0\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[0\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[0\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[1\]_i_1/O reset_antibounce_inst/counter_reg\[1\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[2\]_i_1/O reset_antibounce_inst/counter_reg\[2\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[3\]_i_1/O reset_antibounce_inst/counter_reg\[3\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[4\]_i_1/O reset_antibounce_inst/counter_reg\[4\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[5\]_i_1/O reset_antibounce_inst/counter_reg\[5\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[6\]_i_1/O reset_antibounce_inst/counter_reg\[6\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[7\]_i_1/O reset_antibounce_inst/counter_reg\[7\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[8\]_i_1/O reset_antibounce_inst/counter_reg\[8\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[0\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[1\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[2\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[3\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[4\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[5\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[6\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[7\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[8\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_1/O reset_antibounce_inst/counter_reg\[9\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_2/O reset_antibounce_inst/counter_reg\[9\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_3/O reset_antibounce_inst/counter\[6\]_i_1/I0 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_3/O reset_antibounce_inst/counter\[7\]_i_1/I0 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_3/O reset_antibounce_inst/counter\[9\]_i_2/I1 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT reset_antibounce_inst/counter\[9\]_i_3/O reset_antibounce_inst/counter\[8\]_i_1/I2 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[0\]_i_1/I0 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[1\]_i_1/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[3\]_i_1/I0 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[5\]_i_1/I0 (1054.8:1136.0:1136.0) (1054.8:1136.0:1136.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[9\]_i_3/I0 (1054.8:1136.0:1136.0) (1054.8:1136.0:1136.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[2\]_i_1/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[4\]_i_1/I3 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/counter\[2\]_i_1/I0 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/counter\[1\]_i_1/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/counter\[3\]_i_1/I1 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/counter\[5\]_i_1/I1 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/counter\[9\]_i_3/I1 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/counter\[4\]_i_1/I2 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[1\]/Q reset_antibounce_inst/debounced_reset_i_1/I2 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[2\]/Q reset_antibounce_inst/counter\[4\]_i_1/I1 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[2\]/Q reset_antibounce_inst/counter\[2\]_i_1/I2 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[2\]/Q reset_antibounce_inst/counter\[3\]_i_1/I2 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[2\]/Q reset_antibounce_inst/counter\[5\]_i_1/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[2\]/Q reset_antibounce_inst/counter\[9\]_i_3/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[2\]/Q reset_antibounce_inst/debounced_reset_i_1/I3 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[3\]/Q reset_antibounce_inst/counter\[4\]_i_1/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[3\]/Q reset_antibounce_inst/counter\[3\]_i_1/I3 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[3\]/Q reset_antibounce_inst/counter\[5\]_i_1/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[3\]/Q reset_antibounce_inst/counter\[9\]_i_3/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[3\]/Q reset_antibounce_inst/debounced_reset_i_1/I4 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[4\]/Q reset_antibounce_inst/debounced_reset_i_2/I0 (1054.8:1136.0:1136.0) (1054.8:1136.0:1136.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[4\]/Q reset_antibounce_inst/counter\[4\]_i_1/I4 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[4\]/Q reset_antibounce_inst/counter\[5\]_i_1/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[4\]/Q reset_antibounce_inst/counter\[9\]_i_3/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[5\]/Q reset_antibounce_inst/debounced_reset_i_2/I1 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[5\]/Q reset_antibounce_inst/counter\[5\]_i_1/I5 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[5\]/Q reset_antibounce_inst/counter\[9\]_i_3/I5 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[6\]/Q reset_antibounce_inst/counter\[6\]_i_1/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[6\]/Q reset_antibounce_inst/counter\[7\]_i_1/I1 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[6\]/Q reset_antibounce_inst/counter\[8\]_i_1/I1 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[6\]/Q reset_antibounce_inst/counter\[9\]_i_2/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[6\]/Q reset_antibounce_inst/debounced_reset_i_2/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[7\]/Q reset_antibounce_inst/counter\[8\]_i_1/I0 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[7\]/Q reset_antibounce_inst/counter\[7\]_i_1/I2 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[7\]/Q reset_antibounce_inst/counter\[9\]_i_2/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[7\]/Q reset_antibounce_inst/debounced_reset_i_2/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[8\]/Q reset_antibounce_inst/counter\[9\]_i_2/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[8\]/Q reset_antibounce_inst/counter\[8\]_i_1/I3 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[8\]/Q reset_antibounce_inst/debounced_reset_i_2/I5 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[9\]/Q reset_antibounce_inst/counter\[9\]_i_2/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/counter_reg\[9\]/Q reset_antibounce_inst/debounced_reset_i_2/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_i_1/O reset_antibounce_inst/debounced_reset_reg/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_i_2/O reset_antibounce_inst/debounced_reset_i_1/I1 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q fpadd_mult_inst/first_stage_result_control_signal_reg/CLR (542.8:612.0:612.0) (542.8:612.0:612.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst0/anodes_driving_inst/counter\[1\]_i_1__0/I2 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst0/anodes_driving_inst/counter\[2\]_i_1__0/I3 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0/I4 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/I5 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst1/anodes_driving_inst/counter\[1\]_i_1__1/I2 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst1/anodes_driving_inst/counter\[2\]_i_1__1/I3 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1/I4 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/I5 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q reset_antibounce_inst/counter\[0\]_i_1__0/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q reset_antibounce_inst/counter\[0\]_i_1__1/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/debounced_reset_reg/Q reset_antibounce_inst/debounced_reset_i_1/I5 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT reset_antibounce_inst/reset_sync_reg/Q reset_antibounce_inst/counter\[9\]_i_1/I0 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT reset_antibounce_inst/reset_sync_reg/Q reset_antibounce_inst/debounced_reset_i_1/I0 (1054.8:1136.0:1136.0) (1054.8:1136.0:1136.0))
+      (INTERCONNECT reset_antibounce_inst/temp_reset_reg/Q reset_antibounce_inst/reset_sync_reg/D (618.3:707.0:707.0) (618.3:707.0:707.0))
+      (INTERCONNECT seven_segment_display_inst0/LED_decoder_inst/a/O a0_OBUF_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1/O seven_segment_display_inst0/anodes_driving_inst/anode_signal_reg/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_2/O seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1/I1 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/anode_signal_reg/Q an0_OBUF_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/anode_signal_reg/Q seven_segment_display_inst0/LED_decoder_inst/a/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/anode_signal_reg/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[1\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[2\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/O seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[0\]_i_1__0/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[1\]_i_1__0/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[2\]_i_1__0/I1 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_2/I2 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/I2 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0/I3 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[1\]_i_1__0/I0 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_2/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/I1 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[2\]_i_1__0/I2 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0/I2 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_2/I0 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[2\]_i_1__0/I0 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0/I1 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/I4 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[3\]_i_1__0/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/I1 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_2/I0 (1054.8:1136.0:1136.0) (1054.8:1136.0:1136.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\]/Q seven_segment_display_inst0/anodes_driving_inst/anode_signal_i_1/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst0/anodes_driving_inst/counter_reg\[4\]/Q seven_segment_display_inst0/anodes_driving_inst/counter\[4\]_i_1__0/I3 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0/O seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_2__0/O seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0/I1 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/Q an1_OBUF_inst/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/Q fpadd_mult_inst/e1_OBUF_inst_i_1/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/Q seven_segment_display_inst1/anodes_driving_inst/d1_OBUF_inst_i_1/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/anode_signal_reg/Q seven_segment_display_inst1/anodes_driving_inst/f1_OBUF_inst_i_1/I0 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[1\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[2\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\]/R (816.2:874.0:874.0) (816.2:874.0:874.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/O seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q reset_antibounce_inst/counter\[0\]_i_1__1/I1 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[1\]_i_1__1/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[2\]_i_1__1/I1 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_2__0/I2 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/I2 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[0\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1/I3 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[1\]_i_1__1/I0 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_2__0/I1 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/I1 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[2\]_i_1__1/I2 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1/I2 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[1\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_2__0/I0 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[2\]_i_1__1/I0 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1/I1 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/I4 (433.5:482.0:482.0) (433.5:482.0:482.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[2\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/I4 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[3\]_i_1__1/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/I0 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/I1 (903.7:977.0:977.0) (903.7:977.0:977.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[3\]/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0/I2 (770.7:837.0:837.0) (770.7:837.0:837.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_2__0/I0 (1054.8:1136.0:1136.0) (1054.8:1136.0:1136.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\]/Q seven_segment_display_inst1/anodes_driving_inst/anode_signal_i_1__0/I3 (842.0:912.0:912.0) (842.0:912.0:912.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/counter_reg\[4\]/Q seven_segment_display_inst1/anodes_driving_inst/counter\[4\]_i_1__1/I3 (584.5:641.0:641.0) (584.5:641.0:641.0))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/d1_OBUF_inst_i_1/O d1_OBUF_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT seven_segment_display_inst1/anodes_driving_inst/f1_OBUF_inst_i_1/O f1_OBUF_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      )
+    )
+)
+)

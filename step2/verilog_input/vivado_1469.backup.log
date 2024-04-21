@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 20 22:39:20 2022
+# Process ID: 1469
+# Current directory: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input
+# Command line: vivado
+# Log file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/vivado.log
+# Journal file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'result' on this module [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/fpadd_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'result' on this module [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'result' on this module [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/fpadd_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'result' on this module [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/fpadd_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_single
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim'
+xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto c7717e7863f748fdb892871fb4280645 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'result' on this module [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/testbench.v:78]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 20 22:48:31 2022...

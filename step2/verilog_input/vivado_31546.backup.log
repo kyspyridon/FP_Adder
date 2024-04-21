@@ -1,0 +1,1987 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 20 19:47:07 2022
+# Process ID: 31546
+# Current directory: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input
+# Command line: vivado
+# Log file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/vivado.log
+# Journal file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6ba37d9f, correctOut=6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    0
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 7509.070 ; gain = 58.965 ; free physical = 27616 ; free virtual = 32182
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6ba37d9f, correctOut=6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    0
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7537.078 ; gain = 23.879 ; free physical = 27577 ; free virtual = 32144
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 19:53:11 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 20 19:54:00 2022] Launched impl_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 19:55:21 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/result_sign was not found in the design.
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6b237d9f, correctOut=6ba37d9f
+
+Error at input           3. result was 6b237d9f instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3fa3d700, correctOut=3c23d700
+
+Error at input           5. result was 3fa3d700 instead of 3c23d700
+
+A=c565ee8b,B=4565ee8a,result=c5000000, correctOut=b9800000
+
+Error at input           6. result was c5000000 instead of b9800000
+
+A=447a4efa,B=c47a1ccd,result=4448b400, correctOut=3f48b400
+
+Error at input           7. result was 4448b400 instead of 3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    4
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7634.121 ; gain = 26.008 ; free physical = 27541 ; free virtual = 32110
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/result_sign was not found in the design.
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6ba37d9f, correctOut=6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    0
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7658.137 ; gain = 24.012 ; free physical = 27529 ; free virtual = 32097
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 20:16:36 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Mar 20 20:17:32 2022] Launched impl_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7658.137 ; gain = 0.000 ; free physical = 25790 ; free virtual = 30361
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 7658.137 ; gain = 0.000 ; free physical = 27200 ; free virtual = 31771
+Restored from archive | CPU: 0.080000 secs | Memory: 0.793289 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 7658.137 ; gain = 0.000 ; free physical = 27200 ; free virtual = 31771
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7794.270 ; gain = 0.000 ; free physical = 26896 ; free virtual = 31466
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 7948.484 ; gain = 290.348 ; free physical = 26801 ; free virtual = 31372
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim/testbench_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim/testbench_func_impl.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim/testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_impl xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_impl xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_impl
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim/xsim.dir/testbench_func_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 20 20:19:13 2022...
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7948.484 ; gain = 0.000 ; free physical = 26743 ; free virtual = 31315
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_func_impl -key {Post-Implementation:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/sign_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/mantissa_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/significand_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/sign_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/mantissa_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/significand_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/first_stage_significand_addition_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/temp_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_sub_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/num_of_leading_zeros was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_sign was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_control_signal was not found in the design.
+WARNING: Simulation object /testbench/DUT/temp_mantissa was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_mantissa was not found in the design.
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 8018.043 ; gain = 69.559 ; free physical = 26725 ; free virtual = 31297
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8018.043 ; gain = 0.000 ; free physical = 26717 ; free virtual = 31290
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8053.879 ; gain = 0.000 ; free physical = 26653 ; free virtual = 31225
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim/testbench_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim/testbench_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim/testbench_time_synth.v
+INFO: [SIM-utils-37] SDF generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim/testbench_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim/testbench_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_time_synth.sdf", for root module "testbench/DUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_time_synth.sdf", for root module "testbench/DUT".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_time_synth
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim/xsim.dir/testbench_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 20 20:19:54 2022...
+run_program: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 8170.551 ; gain = 0.000 ; free physical = 26592 ; free virtual = 31176
+INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_time_synth -key {Post-Synthesis:sim_1:Timing:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/sign_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/mantissa_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/significand_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/sign_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/mantissa_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/significand_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/first_stage_significand_addition_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/temp_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_sub_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/num_of_leading_zeros was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_sign was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_control_signal was not found in the design.
+WARNING: Simulation object /testbench/DUT/temp_mantissa was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_mantissa was not found in the design.
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[0]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[5]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[13]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[21]/TChk153_1417 at time 107505 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[22]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+A=2ac49214,B=6ac49214,result=6b449214, correctOut=6ac49214
+
+Error at input           4. result was 6b449214 instead of 6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3ea3d700, correctOut=3c23d700
+
+Error at input           5. result was 3ea3d700 instead of 3c23d700
+
+A=c565ee8b,B=4565ee8a,result=f9800000, correctOut=b9800000
+
+Error at input           6. result was f9800000 instead of b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    6
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 8226.395 ; gain = 208.352 ; free physical = 26552 ; free virtual = 31138
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/xsim.dir/testbench_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 20 20:20:25 2022...
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 8226.395 ; gain = 0.000 ; free physical = 26573 ; free virtual = 31161
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_func_synth -key {Post-Synthesis:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/sign_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/mantissa_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/significand_A was not found in the design.
+WARNING: Simulation object /testbench/DUT/sign_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/mantissa_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/significand_B was not found in the design.
+WARNING: Simulation object /testbench/DUT/first_stage_significand_addition_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/temp_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/exp_sub_result was not found in the design.
+WARNING: Simulation object /testbench/DUT/num_of_leading_zeros was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_sign was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_control_signal was not found in the design.
+WARNING: Simulation object /testbench/DUT/temp_mantissa was not found in the design.
+WARNING: Simulation object /testbench/DUT/result_mantissa was not found in the design.
+WARNING: Simulation object /testbench/out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 8282.227 ; gain = 55.832 ; free physical = 26554 ; free virtual = 31141
+current_sim simulation_5
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 20:27:00 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+current_sim simulation_7
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26589 ; free virtual = 31175
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26589 ; free virtual = 31175
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+relaunch_sim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26581 ; free virtual = 31167
+reset_run synth_1
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+save_wave_config {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6ba37d9f, correctOut=6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    0
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26564 ; free virtual = 31150
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 20:50:33 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+close_design
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26658 ; free virtual = 31244
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26602 ; free virtual = 31188
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDPE_default
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26571 ; free virtual = 31158
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_func_synth -key {Post-Synthesis:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/significand_addition_result was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26558 ; free virtual = 31145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 20:53:26 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+close_design
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26651 ; free virtual = 31238
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26596 ; free virtual = 31183
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26561 ; free virtual = 31148
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_func_synth -key {Post-Synthesis:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/significand_addition_result was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26550 ; free virtual = 31137
+current_wave_config {testbench_behav.wcfg}
+testbench_behav.wcfg
+add_wave {{/testbench/DUT/result_control_signal1_out}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+save_wave_config {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg}
+current_sim simulation_8
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/result_control_signal1_out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=4b800000, correctOut=40400000
+
+Error at input           0. result was 4b800000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=39800000, correctOut=450e6a00
+
+Error at input           2. result was 39800000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=6b237d9f, correctOut=6ba37d9f
+
+Error at input           3. result was 6b237d9f instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6b092428, correctOut=6ac49214
+
+Error at input           4. result was 6b092428 instead of 6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3f8147ae, correctOut=3c23d700
+
+Error at input           5. result was 3f8147ae instead of 3c23d700
+
+A=c565ee8b,B=4565ee8a,result=c1800080, correctOut=b9800000
+
+Error at input           6. result was c1800080 instead of b9800000
+
+A=447a4efa,B=c47a1ccd,result=38800000, correctOut=3f48b400
+
+Error at input           7. result was 38800000 instead of 3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=00000000, correctOut=40a00000
+
+Error at input           9. result was 00000000 instead of 40a00000
+
+A=38108900,B=bb908900,result=b0000000, correctOut=bb8f67ee
+
+Error at input          10. result was b0000000 instead of bb8f67ee
+
+Num of Errors =    9
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8282.227 ; gain = 0.000 ; free physical = 26558 ; free virtual = 31145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/result_control_signal1_out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=4b800000, correctOut=40400000
+
+Error at input           0. result was 4b800000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=39800000, correctOut=450e6a00
+
+Error at input           2. result was 39800000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=6b237d9f, correctOut=6ba37d9f
+
+Error at input           3. result was 6b237d9f instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6b092428, correctOut=6ac49214
+
+Error at input           4. result was 6b092428 instead of 6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3f8147ae, correctOut=3c23d700
+
+Error at input           5. result was 3f8147ae instead of 3c23d700
+
+A=c565ee8b,B=4565ee8a,result=c1800080, correctOut=b9800000
+
+Error at input           6. result was c1800080 instead of b9800000
+
+A=447a4efa,B=c47a1ccd,result=38800000, correctOut=3f48b400
+
+Error at input           7. result was 38800000 instead of 3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=00000000, correctOut=40a00000
+
+Error at input           9. result was 00000000 instead of 40a00000
+
+A=38108900,B=bb908900,result=b0000000, correctOut=bb8f67ee
+
+Error at input          10. result was b0000000 instead of bb8f67ee
+
+Num of Errors =    9
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8296.816 ; gain = 14.590 ; free physical = 26541 ; free virtual = 31128
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+ERROR: [VRFC 10-4982] syntax error near ')' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:106]
+WARNING: [VRFC 10-2096] empty statement in always construct [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:106]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:124]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:130]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:136]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:142]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:150]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:160]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:169]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:175]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:185]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:194]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:202]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:210]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:228]
+ERROR: [VRFC 10-4982] syntax error near '=' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:237]
+WARNING: [VRFC 10-1771] potential always loop found [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:106]
+ERROR: [VRFC 10-2969] 'sign_A' is not a type [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:110]
+ERROR: [VRFC 10-2969] 'exp_A' is not a type [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:111]
+ERROR: [VRFC 10-2969] 'mantissa_A' is not a type [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:112]
+ERROR: [VRFC 10-2969] 'sign_B' is not a type [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v:114]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/result_control_signal1_out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6ba37d9f, correctOut=6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    0
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8392.863 ; gain = 40.016 ; free physical = 26534 ; free virtual = 31121
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 21:11:57 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+current_sim simulation_10
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8392.863 ; gain = 0.000 ; free physical = 26626 ; free virtual = 31213
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8392.863 ; gain = 0.000 ; free physical = 26576 ; free virtual = 31163
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8392.863 ; gain = 0.000 ; free physical = 26543 ; free virtual = 31131
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_func_synth -key {Post-Synthesis:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 8392.863 ; gain = 0.000 ; free physical = 26535 ; free virtual = 31122
+current_sim simulation_13
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+WARNING: Simulation object /testbench/DUT/result_control_signal1_out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+A=3f800000,B=40000000,result=40400000, correctOut=40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=450e6a00, correctOut=450e6a00
+
+A=6b64b235,B=6ac49214,result=6ba37d9f, correctOut=6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    0
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8408.871 ; gain = 16.008 ; free physical = 26526 ; free virtual = 31113
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Mar 20 21:16:49 2022] Launched synth_1...
+Run output will be captured here: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/runme.log
+current_sim simulation_14
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8408.871 ; gain = 0.000 ; free physical = 26539 ; free virtual = 31127
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8408.871 ; gain = 0.000 ; free physical = 26491 ; free virtual = 31078
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj testbench_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 524ad972f8d94a6d9e852a8fc4d0263c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot testbench_func_synth xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    CPATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.fpadd_mult
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_func_synth
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8408.871 ; gain = 0.000 ; free physical = 26465 ; free virtual = 31053
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_func_synth -key {Post-Synthesis:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg

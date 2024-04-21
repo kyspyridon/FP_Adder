@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/project_1_step4/project_1_step4.sim/sim_1/synth/func/xsim/testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module anodes_driving
+INFO: [VRFC 10-311] analyzing module anodes_driving_1
+INFO: [VRFC 10-311] analyzing module button_antibounce
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module fpadd_system
+INFO: [VRFC 10-311] analyzing module input_provider
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-311] analyzing module reset_antibounce
+INFO: [VRFC 10-311] analyzing module seven_segment_display
+INFO: [VRFC 10-311] analyzing module seven_segment_display_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2458] undeclared symbol e0, assumed default net type wire [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v:12]

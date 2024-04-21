@@ -1,0 +1,16 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/project_1_step4/project_1_step4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/7_segment_display.v,1647952204,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/LEDdecoder.v,,seven_segment_display,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/LEDdecoder.v,1647876813,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/anodes_driving.v,,LED_decoder,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/anodes_driving.v,1647883898,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/button_antibounce.v,,anodes_driving,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/button_antibounce.v,1647950609,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/clz.v,,button_antibounce,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/clz.v,1647626533,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_mult.v,,clz,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_mult.v,1647806809,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_system.v,,fpadd_mult,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_system.v,1647891242,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/input_provider.v,,fpadd_system,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/input_provider.v,1647890078,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/memory.v,,input_provider,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/memory.v,1647890272,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/reset_antibounce.v,,memory,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/reset_antibounce.v,1647876743,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v,,reset_antibounce,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v,1647947615,verilog,,,,testbench,,,,,,,,

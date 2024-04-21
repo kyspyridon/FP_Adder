@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 20 19:47:07 2022
+# Process ID: 31546
+# Current directory: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input
+# Command line: vivado
+# Log file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/vivado.log
+# Journal file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation -mode post-implementation -type functional
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+launch_simulation -mode post-synthesis -type timing
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+current_sim simulation_5
+close_sim
+current_sim simulation_6
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_sim simulation_7
+relaunch_sim
+reset_run synth_1
+current_sim simulation_4
+close_sim
+save_wave_config {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+current_wave_config {testbench_behav.wcfg}
+add_wave {{/testbench/DUT/result_control_signal1_out}} 
+restart
+run all
+save_wave_config {/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg}
+current_sim simulation_8
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_sim simulation_10
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+current_sim simulation_13
+close_sim
+launch_simulation
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg
+source testbench.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_sim simulation_14
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type functional
+open_wave_config /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/testbench_behav.wcfg

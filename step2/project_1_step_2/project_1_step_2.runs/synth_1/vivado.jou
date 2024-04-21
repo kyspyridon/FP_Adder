@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Mar 20 22:08:22 2022
+# Process ID: 29481
+# Current directory: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1
+# Command line: vivado -log fpadd_mult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpadd_mult.tcl
+# Log file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/fpadd_mult.vds
+# Journal file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/project_1_step_2/project_1_step_2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fpadd_mult.tcl -notrace

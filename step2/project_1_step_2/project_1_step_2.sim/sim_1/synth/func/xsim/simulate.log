@@ -1,0 +1,64 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 240 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+A=2ac49214,B=6ac49214,result=6ac49214, correctOut=6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3c23d700, correctOut=3c23d700
+
+A=c565ee8b,B=4565ee8a,result=b9800000, correctOut=b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    3
+
+$finish called at time : 240 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64

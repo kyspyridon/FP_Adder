@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 21 21:28:00 2022
+# Process ID: 24278
+# Current directory: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv -mode batch -source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/impl/timing/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 21 21:28:00 2022...

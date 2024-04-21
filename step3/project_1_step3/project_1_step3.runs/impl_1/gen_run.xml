@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1647954877">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="fpadd_system.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fpadd_system.ltx"/>
+  <File Type="BG-BGN" Name="fpadd_system.bgn"/>
+  <File Type="NPI_FILE" Name="fpadd_system.npi"/>
+  <File Type="BG-DRC" Name="fpadd_system.drc"/>
+  <File Type="RNPI_FILE" Name="fpadd_system.rnpi"/>
+  <File Type="CFI_FILE" Name="fpadd_system.cfi"/>
+  <File Type="RCFI_FILE" Name="fpadd_system.rcfi"/>
+  <File Type="PDI-FILE" Name="fpadd_system.pdi"/>
+  <File Type="BITSTR-MMI" Name="fpadd_system.mmi"/>
+  <File Type="BITSTR-BMM" Name="fpadd_system_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="fpadd_system.nky"/>
+  <File Type="BITSTR-RBT" Name="fpadd_system.rbt"/>
+  <File Type="BITSTR-MSK" Name="fpadd_system.msk"/>
+  <File Type="RBD_FILE" Name="fpadd_system.rbd"/>
+  <File Type="BG-BIN" Name="fpadd_system.bin"/>
+  <File Type="BG-BIT" Name="fpadd_system.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fpadd_system_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fpadd_system_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fpadd_system_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="fpadd_system.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fpadd_system_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fpadd_system_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fpadd_system_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fpadd_system_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fpadd_system_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fpadd_system_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fpadd_system_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="fpadd_system_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fpadd_system_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="fpadd_system_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fpadd_system_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fpadd_system_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="fpadd_system_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="fpadd_system_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="fpadd_system_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="fpadd_system_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fpadd_system_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fpadd_system_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fpadd_system_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="fpadd_system_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="fpadd_system_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="fpadd_system_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fpadd_system_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="fpadd_system_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fpadd_system_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="fpadd_system_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="fpadd_system_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fpadd_system_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fpadd_system_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fpadd_system_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="fpadd_system_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fpadd_system_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fpadd_system_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="fpadd_system_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fpadd_system_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="fpadd_system_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fpadd_system_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="fpadd_system_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="fpadd_system_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="fpadd_system_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="fpadd_system_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="fpadd_system_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="fpadd_system_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fpadd_system.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fpadd_system_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="fpadd_system_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fpadd_system_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="fpadd_system_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fpadd_system_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="fpadd_system_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fpadd_system_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="fpadd_system.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../7_segment_display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LEDdecoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../anodes_driving.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../clz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpadd_mult.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../reset_antibounce.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fpadd_system.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fpadd_system"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../our_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

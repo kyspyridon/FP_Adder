@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 21 18:31:41 2022
+# Process ID: 9827
+# Current directory: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/synth/func/xsim
+# Command line: wbtcv -mode batch -source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/synth/func/xsim/xsim.dir/testbench_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/synth/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step1/verilog_input/project_1_step1/project_1_step1.sim/sim_1/synth/func/xsim/xsim.dir/testbench_func_synth/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,255 @@
+
+*** Running vivado
+    with args -log fpadd_system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpadd_system.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source fpadd_system.tcl -notrace
+Command: synth_design -top fpadd_system -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15022
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2391.609 ; gain = 0.000 ; free physical = 21199 ; free virtual = 25405
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpadd_system' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_system.v:21]
+INFO: [Synth 8-6157] synthesizing module 'reset_antibounce' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/reset_antibounce.v:21]
+	Parameter limit bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reset_antibounce' (1#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/reset_antibounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'input_provider' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/input_provider.v:28]
+INFO: [Synth 8-6157] synthesizing module 'button_antibounce' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/button_antibounce.v:21]
+	Parameter limit bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_antibounce' (2#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/button_antibounce.v:21]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/memory.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (3#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/memory.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'input_provider' (4#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/input_provider.v:28]
+INFO: [Synth 8-6157] synthesizing module 'fpadd_mult' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_mult.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clz' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/clz.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'clz' (5#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/clz.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'fpadd_mult' (6#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_mult.v:21]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_display' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/7_segment_display.v:21]
+INFO: [Synth 8-6157] synthesizing module 'anodes_driving' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/anodes_driving.v:21]
+	Parameter limit bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'anodes_driving' (7#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/anodes_driving.v:21]
+INFO: [Synth 8-6157] synthesizing module 'LED_decoder' [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/LEDdecoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'LED_decoder' (8#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/LEDdecoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display' (9#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/7_segment_display.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'fpadd_system' (10#1) [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_system.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2391.609 ; gain = 0.000 ; free physical = 21888 ; free virtual = 26095
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2391.609 ; gain = 0.000 ; free physical = 21939 ; free virtual = 26146
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2391.609 ; gain = 0.000 ; free physical = 21937 ; free virtual = 26144
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2391.609 ; gain = 0.000 ; free physical = 21915 ; free virtual = 26122
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/our_constraints.xdc]
+Finished Parsing XDC File [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/our_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/our_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpadd_system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpadd_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.375 ; gain = 0.000 ; free physical = 21742 ; free virtual = 25949
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2432.375 ; gain = 0.000 ; free physical = 21754 ; free virtual = 25961
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2432.375 ; gain = 40.766 ; free physical = 21896 ; free virtual = 26103
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2432.375 ; gain = 40.766 ; free physical = 21931 ; free virtual = 26138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2432.375 ; gain = 40.766 ; free physical = 21906 ; free virtual = 26113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2432.379 ; gain = 40.770 ; free physical = 21900 ; free virtual = 26108
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   25 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 12    
+	               32 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   25 Bit        Muxes := 4     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2432.379 ; gain = 40.770 ; free physical = 21889 ; free virtual = 26100
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2432.379 ; gain = 40.770 ; free physical = 21756 ; free virtual = 25968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2432.379 ; gain = 40.770 ; free physical = 21739 ; free virtual = 25950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2440.379 ; gain = 48.770 ; free physical = 21729 ; free virtual = 25941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21733 ; free virtual = 25945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21749 ; free virtual = 25960
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21762 ; free virtual = 25973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21746 ; free virtual = 25958
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21742 ; free virtual = 25954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21733 ; free virtual = 25944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    48|
+|3     |LUT1   |     5|
+|4     |LUT2   |    56|
+|5     |LUT3   |    76|
+|6     |LUT4   |   136|
+|7     |LUT5   |    87|
+|8     |LUT6   |   158|
+|9     |FDCE   |    55|
+|10    |FDRE   |   127|
+|11    |IBUF   |     3|
+|12    |OBUF   |    24|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.383 ; gain = 48.773 ; free physical = 21731 ; free virtual = 25942
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2440.383 ; gain = 8.008 ; free physical = 21816 ; free virtual = 26028
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2440.387 ; gain = 48.773 ; free physical = 21810 ; free virtual = 26021
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2440.387 ; gain = 0.000 ; free physical = 21890 ; free virtual = 26101
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2440.387 ; gain = 0.000 ; free physical = 21844 ; free virtual = 26055
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 2440.387 ; gain = 55.062 ; free physical = 21981 ; free virtual = 26192
+INFO: [Common 17-1381] The checkpoint '/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/project_1_step4/project_1_step4.runs/synth_1/fpadd_system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpadd_system_utilization_synth.rpt -pb fpadd_system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 24 10:08:29 2022...

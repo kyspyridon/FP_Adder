@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../verilog_input/clz.v" \
+"../../../../../verilog_input/fpadd_mult.v" \
+"../../../../../verilog_input/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

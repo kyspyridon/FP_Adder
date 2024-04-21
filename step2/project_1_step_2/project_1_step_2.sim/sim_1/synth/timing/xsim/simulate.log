@@ -1,0 +1,44 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+A=3f800000,B=40000000,result=00000000, correctOut=40400000
+
+Error at input           0. result was 00000000 instead of 40400000
+
+A=bf800000,B=3f800000,result=00000000, correctOut=00000000
+
+A=c2de8000,B=45155e00,result=00000000, correctOut=450e6a00
+
+Error at input           2. result was 00000000 instead of 450e6a00
+
+A=6b64b235,B=6ac49214,result=00000000, correctOut=6ba37d9f
+
+Error at input           3. result was 00000000 instead of 6ba37d9f
+
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[0]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[5]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[13]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 153: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[21]/TChk153_1417 at time 107505 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+WARNING: "/opt/Xilinx/Vivado/2020.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /testbench/DUT/first_stage_significand_addition_result_reg[22]/TChk150_1414 at time 107505 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
+A=2ac49214,B=6ac49214,result=6b449214, correctOut=6ac49214
+
+Error at input           4. result was 6b449214 instead of 6ac49214
+
+A=bfc66666,B=3fc7ae14,result=3ea3d700, correctOut=3c23d700
+
+Error at input           5. result was 3ea3d700 instead of 3c23d700
+
+A=c565ee8b,B=4565ee8a,result=f9800000, correctOut=b9800000
+
+Error at input           6. result was f9800000 instead of b9800000
+
+A=447a4efa,B=c47a1ccd,result=3f48b400, correctOut=3f48b400
+
+A=00000000,B=00000000,result=00000000, correctOut=00000000
+
+A=00000000,B=40a00000,result=40a00000, correctOut=40a00000
+
+A=38108900,B=bb908900,result=bb8f67ee, correctOut=bb8f67ee
+
+Num of Errors =    6
+
+$finish called at time : 245 ns : File "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step2/project1_step2/workdir/verilog_input/testbench.v" Line 64

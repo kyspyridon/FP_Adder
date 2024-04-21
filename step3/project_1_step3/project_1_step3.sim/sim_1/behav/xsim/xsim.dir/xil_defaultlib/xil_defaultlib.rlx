@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/7_segment_display.v,1647889502,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/LEDdecoder.v,,seven_segment_display,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/LEDdecoder.v,1647876813,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/anodes_driving.v,,LED_decoder,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/anodes_driving.v,1647883898,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/clz.v,,anodes_driving,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/clz.v,1647880351,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/fpadd_mult.v,,clz,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/fpadd_mult.v,1647880342,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/fpadd_system.v,,fpadd_mult,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/fpadd_system.v,1647880575,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/reset_antibounce.v,,fpadd_system,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/reset_antibounce.v,1647876743,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/testbench.v,,reset_antibounce,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/testbench.v,1647892294,verilog,,,,testbench,,,,,,,,

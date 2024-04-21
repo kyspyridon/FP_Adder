@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../7_segment_display.v" \
+"../../../../../LEDdecoder.v" \
+"../../../../../anodes_driving.v" \
+"../../../../../clz.v" \
+"../../../../../fpadd_mult.v" \
+"../../../../../fpadd_system.v" \
+"../../../../../reset_antibounce.v" \
+"../../../../../testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

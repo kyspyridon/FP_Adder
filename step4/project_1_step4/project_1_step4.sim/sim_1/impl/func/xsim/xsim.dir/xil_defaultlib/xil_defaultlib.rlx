@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/project_1_step4/project_1_step4.sim/sim_1/impl/func/xsim/testbench_func_impl.v,1647950781,verilog,,/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v,,anodes_driving;anodes_driving_1;button_antibounce;fpadd_mult;fpadd_system;glbl;input_provider;memory;reset_antibounce;seven_segment_display;seven_segment_display_0,,,,,,,,
+/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v,1647947615,verilog,,,,testbench,,,,,,,,

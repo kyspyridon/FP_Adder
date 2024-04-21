@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/7_segment_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/anodes_driving.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module anodes_driving
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/button_antibounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_antibounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/fpadd_system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpadd_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/input_provider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module input_provider
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/reset_antibounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_antibounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2458] undeclared symbol e0, assumed default net type wire [/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step4/verilog_input/testbench.v:12]

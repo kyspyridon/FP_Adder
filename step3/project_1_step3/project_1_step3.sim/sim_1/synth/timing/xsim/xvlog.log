@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/project_1_step3/project_1_step3.sim/sim_1/synth/timing/xsim/testbench_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_decoder
+INFO: [VRFC 10-311] analyzing module anodes_driving
+INFO: [VRFC 10-311] analyzing module anodes_driving_1
+INFO: [VRFC 10-311] analyzing module fpadd_mult
+INFO: [VRFC 10-311] analyzing module fpadd_system
+INFO: [VRFC 10-311] analyzing module reset_antibounce
+INFO: [VRFC 10-311] analyzing module seven_segment_display
+INFO: [VRFC 10-311] analyzing module seven_segment_display_0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/local/embedded/courses/ECE340_EmbeddedSystems/Labs/lab1/step3/verilog_input/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

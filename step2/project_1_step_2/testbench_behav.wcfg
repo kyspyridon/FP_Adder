@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_func_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="247fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
+      <ValueColumnWidth column_width="56"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject type="logic" fp_name="/testbench/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/A">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/B">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider520" type="divider">
+      <obj_property name="label">A</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/reg_A">
+      <obj_property name="ElementShortName">reg_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_A[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider526" type="divider">
+      <obj_property name="label">B</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/reg_B">
+      <obj_property name="ElementShortName">reg_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_B[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider532" type="divider">
+      <obj_property name="label">first_stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/DUT/first_stage_sign_A">
+      <obj_property name="ElementShortName">first_stage_sign_A</obj_property>
+      <obj_property name="ObjectShortName">first_stage_sign_A</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/DUT/first_stage_sign_B">
+      <obj_property name="ElementShortName">first_stage_sign_B</obj_property>
+      <obj_property name="ObjectShortName">first_stage_sign_B</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/DUT/first_stage_result_sign">
+      <obj_property name="ElementShortName">first_stage_result_sign</obj_property>
+      <obj_property name="ObjectShortName">first_stage_result_sign</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/first_stage_result_exp">
+      <obj_property name="ElementShortName">first_stage_result_exp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">first_stage_result_exp[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/first_stage_result">
+      <obj_property name="ElementShortName">first_stage_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">first_stage_result[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/DUT/first_stage_result_control_signal">
+      <obj_property name="ElementShortName">first_stage_result_control_signal</obj_property>
+      <obj_property name="ObjectShortName">first_stage_result_control_signal</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/DUT/result_control_signal1_out">
+      <obj_property name="ElementShortName">result_control_signal1_out</obj_property>
+      <obj_property name="ObjectShortName">result_control_signal1_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider540" type="divider">
+      <obj_property name="label">second_stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/result_exp">
+      <obj_property name="ElementShortName">result_exp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result_exp[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/temp_result">
+      <obj_property name="ElementShortName">temp_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/DUT/result">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider551" type="divider">
+      <obj_property name="label">correct</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/correctOut">
+      <obj_property name="ElementShortName">correctOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">correctOut[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/correct_sign">
+      <obj_property name="ElementShortName">correct_sign</obj_property>
+      <obj_property name="ObjectShortName">correct_sign</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/correct_exp">
+      <obj_property name="ElementShortName">correct_exp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">correct_exp[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/correct_mantissa">
+      <obj_property name="ElementShortName">correct_mantissa[22:0]</obj_property>
+      <obj_property name="ObjectShortName">correct_mantissa[22:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
